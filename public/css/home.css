@@ -32,10 +32,9 @@ header a img {
 width: 130px;
 margin-left: 25px;
 }
-header nav{
+header div.busqueda{
   margin-left: 15px;
   margin-bottom: 10px;
-  width: 170px;
 }
 header p.comprar {
   display: block;
@@ -43,8 +42,9 @@ header p.comprar {
   font-size: var(--Parrafo);
   margin-bottom: 15px;
 }
-header ul.uno {
+header nav {
   margin-bottom: 15px;
+  display: none;
 }
 header div.burger-menu {
   background-color: var(--celeste);
@@ -61,9 +61,50 @@ width: 100%;
 body{
   background-color: var(--gris-claro);
 }
-/* SECCIONES
-PRODUCTOS
-FOOTER */
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+main section.compras {
+  display: flex;
+  align-content: center;
+
+}
+main section{ 
+  width: 100%;
+  justify-content: center;
+align-items: center;
+}
+
+img.banner{
+  width:100%;
+}
+main section article{
+  margin-bottom: 10px;
+  background-color: white;
+}
+main section article div.caja{ 
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+main section article div i{
+  border: 1px solid var(--verde);
+  padding: 8px;
+  border-radius: 70%;
+  color:var(--verde);
+  }
+main section article div p.precio{
+  font-size: var(--Precio);
+}
+main section article div p.descuento{
+  color: var(--verde);
+  font-size: var(--Des);
+}
+main section article div h2{
+  font-size: var(--Titulo);
+  color:var(--gris-oscuro);
+  display:none
+}
 footer{
   background-color: white;
 padding: 50px 10px 10px;
@@ -77,3 +118,20 @@ footer article{
   text-align: center;
   margin-bottom: 55px;
 }
+/* Tablet */
+
+@media (min-width:361px){
+
+  header nav{
+    display: inherit;
+  }
+  header div.burger-menu{
+    display: none;
+  }
+main section article{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  
+}
+main section article div h2{
+  display: inherit;
+}}
